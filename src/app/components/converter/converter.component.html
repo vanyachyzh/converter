@@ -1,0 +1,51 @@
+<div class="converter">
+  <div class="converter__currency">
+    <input
+      type="number"
+      id="amountInput"
+      class="converter__input"
+      min="0"
+      step="1"
+      placeholder="Введіть кількість"
+      [(ngModel)]="inputFrom"
+      (ngModelChange)="updateToAmount()"
+    >
+
+    <select
+      id="fromCurrencySelect"
+      class="converter__select"
+      [(ngModel)]="selectFrom"
+      (ngModelChange)="updateToAmount()"
+    >
+      <option value="UAH">UAH</option>
+      <option value="USD">USD</option>
+      <option value="EUR">EUR</option>
+      <option value="PLN">PLN</option>
+    </select>
+  </div>
+
+  <div class="converter__currency">
+    <input
+      type="number"
+      id="convertedAmountInput"
+      class="converter__input"
+      min="0"
+      step="1"
+      placeholder="Введіть кількість"
+      [(ngModel)]="inputTo"
+      (ngModelChange)="updateFromAmount()"
+    >
+
+    <select
+      id="toCurrencySelect"
+      class="converter__select"
+      [(ngModel)]="selectTo"
+      (ngModelChange)="updateToAmount()"
+    >
+      <option value="UAH">UAH</option>
+      <option value="USD">USD</option>
+      <option value="EUR">EUR</option>
+      <option value="PLN">PLN</option>
+    </select>
+  </div>
+</div>

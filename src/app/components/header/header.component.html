@@ -1,0 +1,14 @@
+<header class="header">
+  <h1 class="header__title">Конвертер валют</h1>
+  <span class="header__exchange-label">
+    Актуальний курс на {{ date | date:'dd.MM.yyyy' }}:
+  </span>
+
+  <div class="header__exchange-rate">
+    <ng-container *ngFor="let rate of rates | keyvalue">
+      <span class="header__value">
+        1 {{ rate.key | uppercase }} = {{ (1 / rate.value).toFixed(4) }} UAH
+      </span>
+    </ng-container>
+  </div>
+</header>
