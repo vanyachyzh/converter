@@ -1,5 +1,8 @@
 # Currency Converter App
 
+[Task](https://docs.google.com/document/d/1KWuOkO2jl_K1Btm5iVaqiPt0YM2uUuXNcfYdTMI6ZG0/edit#heading=h.c8sww09tvcj1)
+[Demo](https://vanyachyzh.github.io/converter/)
+
 This is a currency converter application built with Angular, utilizing SCSS with BEM methodology for styling.
 
 ## Features
